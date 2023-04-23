@@ -6,7 +6,7 @@ module.exports = [
     config: {
       enabled: true,
       headers: '*',
-      origin: ['http://localhost:3000', 'http://designanoasis.vercel.app']
+      origin: ['https://designanoasis.herokuapp.com','http://localhost:3000', 'http://designanoasis.vercel.app']
     }
   },
   'strapi::poweredBy',
