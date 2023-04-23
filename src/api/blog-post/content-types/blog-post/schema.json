@@ -4,7 +4,8 @@
   "info": {
     "singularName": "blog-post",
     "pluralName": "blog-posts",
-    "displayName": "Blog post"
+    "displayName": "Blog post",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -28,6 +29,12 @@
     },
     "date": {
       "type": "date"
+    },
+    "categories": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::category.category",
+      "inversedBy": "blog_posts"
     }
   }
 }
