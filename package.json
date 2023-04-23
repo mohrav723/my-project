@@ -15,6 +15,7 @@
     "@strapi/plugin-users-permissions": "4.9.2",
     "@strapi/strapi": "4.9.2",
     "better-sqlite3": "8.0.1",
+    "latest-version": "^7.0.0",
     "pg": "^8.10.0",
     "pg-connection-string": "^2.5.0"
   },
