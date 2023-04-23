@@ -1,7 +1,14 @@
 module.exports = [
   'strapi::errors',
   'strapi::security',
-  'strapi::cors',
+  {
+    name: 'strapi::cors',
+    config: {
+      enabled: true,
+      headers: '*',
+      origin: ['http://localhost:3000', 'http://designanoasis.vercel.app']
+    }
+  },
   'strapi::poweredBy',
   'strapi::logger',
   'strapi::query',
